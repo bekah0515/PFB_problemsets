@@ -1,0 +1,56 @@
+  344  cd PFB_problemsets
+  345  mkdir python1
+  346  python3
+  347  vi about_me.py
+  348  chmod +x about_me.py
+  349  python3 about_me.py
+  350  git status
+  351  git add about_me.py
+  352  git commit -m 'added name to print'
+  353  git push
+  354  vi about_me.py
+  355  python3 about_me.py
+  356  vi about_me.py
+  357  python3 about_me.py
+  358  vi about_me.py
+  359  python3 about_me.py
+  360  python3
+  361  vi about_me.py
+  362  python3 about_me.py
+  363  vi about_me.py
+  364  git add about_me.py
+  365  git commit -m 'added more info about me'
+  366  git push
+  367  vi about_me2.py
+  368  python3 about_me2.py
+  369  about_me2.py Rebekah mauve tennis dog
+  370  vi about_me2.py
+  371  pwd
+  372  ./about_m2.py Rebekah mauve tennis dog
+  373  ls
+  374  vi about_me2.py
+  375  about_me2.py Rebekah mauve tennis dog
+  376  ./about_m2.py Rebekah mauve tennis dog
+  377  ./about_me2.py Rebekah mauve tennis dog
+  378  chmod +x about_me2.py
+  379  ./about_me2.py Rebekah mauve tennis dog
+  380  about_me2.py Rebekah mauve tennis dog
+  381  export PATH=".:${PATH}"
+  382  which ls
+  383  about_me2.py Rebekah mauve tennis dog
+  384  vi about_me2.py
+  385  about_me2.py Rebekah mauve tennis dog
+  386  about_me2.py Rebekah pale_mauve tennis dog
+  387  vi about_me2.py
+  388  about_me2.py Rebekah pale_mauve tennis dog
+  389  vi about_me2.py
+  390  about_me2.py Rebekah pale_mauve tennis dog
+  391  vi about_me2.py
+  392  about_me2.py Rebekah pale_mauve tennis dog
+  393  git add about_me2.py
+  394  git commit -m 'tried multiple ways of printing'
+  395  git push
+  396  git status
+  397  history -999
+  398  history -99
+  399  history -55
