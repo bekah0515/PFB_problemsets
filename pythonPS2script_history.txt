@@ -1,0 +1,99 @@
+  344  cd PFB_problemsets
+  345  ls
+  346  pwd
+  347  ls
+  348  if_statement_practice.py
+  349  ./if_statement_practice.py
+  350  chmod +x if_statement_practice.py
+  351  ./if_statement_practice.py
+  352  git add if_statement_practice.py
+  353  git commit m- if_statement_practice.py
+  354  git commit m- 'add if statment practice script'
+  355  git status
+  356  git add if_statement_practice.py
+  357  git commit -m 'add if script'
+  358  git push
+  359  ./if_statement_practice.py
+  360  ./if_statement_practice.py
+  361  ./if_statement_practice.py
+  362  ./if_statement_practice.py
+  363  ./if_statement_practice.py
+  364  ./if_statement_practice.py
+  365  ./if_statement_practice.py
+  366  ./if_statement_practice.py
+  367  ./if_statement_practice.py
+  368  ./if_statement_practice.py
+  369  ./if_statement_practice.py
+  370  ./if_statement_practice.py
+  371  ./if_statement_practice.py
+  372  ./if_statement_practice.py
+  373  ./if_statement_practice.py
+  374  ./if_statement_practice.py
+  375  ./if_statement_practice.py
+  376  ./if_statement_practice.py
+  377  bool(int)
+  378  bool(int)
+  379  ./if_statement_practice.py
+  380  ./if_statement_practice.py
+  381  ./if_statement_practice.py
+  382  ./if_statement_practice.py
+  383  ./if_statement_practice.py
+  384  ./if_statement_practice.py
+  385  ./if_statement_practice.py
+  386  git add if_statement_practice.py
+  387  git commit -m 'practiced nested tests"
+  388  git commit -m 'practiced nested tests'
+  389  ./if_statement_practice.py
+  390  ./if_statement_practice.py
+  391  ./if_statement_practice.py 50
+  392  export PATH=".:${PATH}"
+  393  if_statement_practice.py 50
+  394  if_statement_practice.py 50
+  395  vi if_sys_test
+  396  if_sys_test 60
+  397  chmod +x if_sys_test
+  398  if_sys_test 60
+  399  vi if_sys_test
+  400  ls
+  401  rm if_sys_test
+  402  ls
+  403  vi if_sys_test.py
+  404  if_sys_test.py
+  405  chmod +x if_sys_test.py
+  406  if_sys_test.py
+  407  if_sys_test.py 60
+  408  if_statement_practice.py 60
+  409  if_statement_practice.py 60
+  410  if_statement_practice.py 60
+  411  if_sys_test.py
+  412  vi if_sys_test.py
+  413  if_sys_test.py
+  414  vi if_sys_test.py
+  415  vi if_sys_test.py
+  416  if_sys_test.py 50
+  417  ./if_statement_practice.py 50
+  418  if_statement_practice.py 60
+  419  if_statement_practice.py 60
+  420  if_statement_practice.py 60
+  421  if_statement_practice.py 60
+  422  if_statement_practice.py 60
+  423  if_statement_practice.py 60
+  424  if_statement_practice.py 60
+  425  if_statement_practice.py 60
+  426  if_statement_practice.py 89
+  427  if_statement_practice.py 99
+  428  if_statement_practice.py 0
+  429  if_statement_practice.py 75
+  430  git add if_statement_practice.py
+  431  git commit -m 'rewrote if test using sys command'
+  432  git push
+  433  git status
+  434  git add if_sys_test.py
+  435  git add .if_statement_practice.py.swp
+  436  git rm if_sys_test.py
+  437  -f
+  438  git rm -f if_sys_test.py
+  439  git status
+  440  git rm -f .if_statement_practice.py.swp
+  441  git status
+  442  git push
