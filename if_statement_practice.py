@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
+import sys
 
-#assign value to my variable
-mynumber = 605
+#assign value to my variable and make it an integer
+mynumber = int(sys.argv[1])
 
-#Test if my number is positive or negative
+#assess the number
 if mynumber < 0:
   print(mynumber, 'is negative')
 elif mynumber > 0:
