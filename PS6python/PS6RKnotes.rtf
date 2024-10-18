@@ -48,5 +48,40 @@ with open('Python_06.txt','r') as open_file:\
     write_file.write(line)\
   print('done!')\
 \
-7. \
-}
+7. #!/usr/bin/env python3\
+\
+seq_dict=\{\}\
+\
+#open file and split id with sequence and store in dictionary\
+with open('Python_06.seq.txt','r') as seq_read:\
+  for line in seq_read:\
+    line=line.rstrip()\
+    gene_id,seq = line.split()\
+    seq_dict[gene_id]=seq\
+  #reverse complement each line\
+  for gene_id in seq_dict:\
+    sequence = seq_dict[gene_id]\
+    complement = sequence.replace('A','t').replace('C','g').replace('G','c').replace('T','a')\
+    complement = complement.upper()\
+    revcomplement = complement [::-1]\
+    print(f"\{gene_id\}\\t5' \{revcomplement\} 3'\\n")\
+\
+print('This is the reverse complement of every sequence.')\
+\
+\
+9. #!/usr/bin/env python3\
+\
+fasta_dict=\{\}\
+#gene_id=""\
+\
+#open file and split id with sequence and store in dictionary\
+with open('Python_06.fasta','r') as seq_read:\
+  for line in seq_read:\
+    #get rid of new lines\
+    line=line.rstrip()\
+    if line.startswith(">"):\
+      gene_id=line.lstrip(">")\
+      fasta_dict[gene_id]=''\
+    else:\
+      fasta_dict[gene_id] += line\
+print(fasta_dict)}
