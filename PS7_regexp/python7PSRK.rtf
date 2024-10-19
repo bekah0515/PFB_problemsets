@@ -1,0 +1,174 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2818
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Italic;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red129\green144\blue144;\red252\green244\blue220;\red83\green104\blue112;
+\red115\green138\blue4;\red33\green118\blue199;\red37\green146\blue134;\red71\green91\blue98;\red209\green28\blue36;
+}
+{\*\expandedcolortbl;;\cssrgb\c57647\c63137\c63137;\cssrgb\c99216\c96471\c89020;\cssrgb\c39608\c48235\c51373;
+\cssrgb\c52157\c60000\c0;\cssrgb\c14902\c54510\c82353;\cssrgb\c16471\c63137\c59608;\cssrgb\c34510\c43137\c45882;\cssrgb\c86275\c19608\c18431;
+}
+\margl1440\margr1440\vieww17980\viewh14680\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #!/usr/bin/env python3\
+\
+import re\
+\
+#open text file\
+with open("Python_07_nobody.txt","r") as nobody_text:\
+  for line in nobody_text:\
+    line = line.rstrip()\
+    #find every occurance of 'nobody' and print out the position\
+    for match in re.finditer(r"(nobody)", line, re.I):\
+      word = match.group(1)\
+      word_position = match.start(1) + 1\
+      print(word_position)\
+    #replace nobody to bekah\
+      new_line = re.sub(r'Nobody','Bekah', line)\
+      print(new_line)\
+\
+3. import re\
+#!/usr/bin/env python3\
+\
+import re\
+\
+#open text file\
+with open("Python_07.fasta","r") as fasta_file:\
+  for line in fasta_file:\
+    line = line.rstrip()\
+    #find every header\
+    for match in re.finditer(r"(^>\\S+.*)",line):\
+      print(match.group(1))\
+\
+5. #!/usr/bin/env python3\
+\
+import re\
+\
+fasta_dict=\{\}\
+#gene_id=""\
+\
+#open file and split id with sequence and store in dictionary\
+with open('Python_07.fasta','r') as fasta_file:\
+  for line in fasta_file:\
+    line=line.rstrip()\
+    if line.startswith(">"):\
+      for match in re.finditer(r"(^>\\S+.*)",line):\
+        id= match.group(1)\
+        gene_id = id.lstrip(">")\
+        fasta_dict[gene_id]=''\
+    else:\
+      fasta_dict[gene_id] += line\
+print(fasta_dict)\
+~\
+\
+6.  #!/usr/bin/env python3\
+\
+import re\
+\
+apoIsites_dict=\{\}\
+\
+#open file and split id with sequence and store in dictionary\
+with open('Python_07_ApoI.fasta','r') as fasta_file:\
+  for line in fasta_file:\
+    line=line.rstrip()\
+    if not line.startswith(">"):\
+      for match in re.findall(r"([AG]AATT[CT])",line):\
+        apoIsites_dict[match]=""\
+        print(apoIsites_dict)\
+\
+6.     #!/usr/bin/env python3\
+\
+import re\
+#!/usr/bin/env python3\
+\
+import re\
+\
+\
+#open file and find all ApoI cut sites\
+with open('Python_07_ApoI.fasta','r') as fasta_file:\
+  for line in fasta_file:\
+    line=line.rstrip()\
+    if not line.startswith(">"):\
+      for match in re.findall(r"([AG]AATT[CT])",line):\
+        print(match)\
+       #print(apoIsites_dict)\
+\
+7. #!/usr/bin/env python3\
+\
+import re\
+\
+#open file and find all ApoI cut sites\
+with open('Python_07_ApoI.fasta','r') as fasta_file:\
+  for line in fasta_file:\
+    line=line.rstrip()\
+    if line.startswith(">"):\
+      print(line)\
+    else:\
+      #replace with carrot\
+      cut_site = re.sub(r"([AG])(AATT[CT])", r"\\1^\\2", line)\
+      print(cut_site)\
+\
+~\
+\
+8. 1 #!/usr/bin/env python3\
+  2\
+  3 import re\
+  4\
+  5 compiledseq = \{\}\
+  6 #open file and find all ApoI cut sites\
+  7 with open('Python_07_ApoI.fasta','r') as fasta_file:\
+  8   for line in fasta_file:\
+  9     line=line.rstrip()\
+ 10     cut_site = re.sub(r"([AG])(AATT[CT])", r"\\1^\\2", line)\
+ 11     if line.startswith(">"):\
+ 12       seq = line.lstrip(">")\
+ 13       compiledseq[seq] = ""\
+ 14     else:\
+ 15       compiledseq[seq] += cut_site\
+ 16   print(compiledseq)\
+ 17\
+ 18   #cut the sequence at cutsites\
+ 19   sequence = compiledseq[seq]\
+ 20   fragment = sequence.split("^")\
+ 21   sorted_fragment = sorted(fragment, key=len)\
+ 22   print(sorted_fragment)\
+\
+9. 
+\f1\i \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 #!/usr/bin/env python3
+\f2\i0 \cf4 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\cb3 restrictenz_dict\cf5 \strokec5 =\cf4 \strokec4 \{\}\cb1 \
+\cf5 \cb3 \strokec5 import\cf4 \strokec4  re \cb1 \
+
+\f1\i \cf2 \cb3 \strokec2 #open text file
+\f2\i0 \cf4 \cb1 \strokec4 \
+\cf5 \cb3 \strokec5 with\cf4 \strokec4  \cf6 \strokec6 open\cf4 \strokec4 (\cf7 \strokec7 "bionet.txt"\cf4 \strokec4 ,\cf7 \strokec7 "r"\cf4 \strokec4 ) \cf5 \strokec5 as\cf4 \strokec4  bionet_file:\cb1 \
+\cb3   \cf5 \strokec5 for\cf4 \strokec4  line \cf5 \strokec5 in\cf4 \strokec4  bionet_file:\cb1 \
+\cb3     line \cf5 \strokec5 =\cf4 \strokec4  line.rstrip()\cb1 \
+\cb3     
+\f1\i \cf2 \strokec2 #delineate header as key for RE dictionary
+\f2\i0 \cf4 \cb1 \strokec4 \
+\cb3     \cf5 \strokec5 for\cf4 \strokec4  header \cf5 \strokec5 in\cf4 \strokec4  re.findall(
+\f3\b \cf8 \strokec8 r
+\f2\b0 \cf9 \strokec9 "(^\\S\cf5 \strokec5 +\cf9 \strokec9  \\S\cf5 \strokec5 *\cf9 \strokec9 )"\cf4 \strokec4 , line):\cb1 \
+\cb3       restrictenz_dict[header]\cf5 \strokec5 =\cf7 \strokec7 ''\cf4 \strokec4     \cb1 \
+\cb3       
+\f1\i \cf2 \strokec2 #print(header)
+\f2\i0 \cf4 \cb1 \strokec4 \
+\cb3     \cf5 \strokec5 for\cf4 \strokec4  sequence \cf5 \strokec5 in\cf4 \strokec4  re.findall(
+\f3\b \cf8 \strokec8 r
+\f2\b0 \cf9 \strokec9 '(\\S\cf5 \strokec5 +\cf9 \strokec9 $)'\cf4 \strokec4 ,line):\cb1 \
+\cb3       restrictenz_dict[header]\cf5 \strokec5 =\cf4 \strokec4 sequence\cb1 \
+\cf6 \cb3 \strokec6 print\cf4 \strokec4 (restrictenz_dict)\cb1 \
+\cf6 \cb3 \strokec6 print\cf4 \strokec4 (\cf6 \strokec6 len\cf4 \strokec4 (restrictenz_dict))\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+10. \
+\
+\
+\
+\
+}

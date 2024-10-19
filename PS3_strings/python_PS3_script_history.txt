@@ -1,0 +1,99 @@
+  456  git add pythonPS2/
+  457  git add RKnotes/pythonPS2script_history.txt
+  458  git status
+  459  git rm if_statement_practice.py
+  460  git rm pythonPS2script_history.txt
+  461  git commit -m 'moved files around'
+  462  git push
+  463  clear
+  464  cd ~
+  465  ls
+  466  cd Documents
+  467  ls
+  468  mv pythonPS3RKanswers.rtf pythonPS2RKanswers.rtf
+  469  ls
+  470  mv pythonPS3RKanswers_.rtf pythonPS3RKanswers.rtf
+  471  ls
+  472  mv pythonPS2RKanswers.rtf ../PFB_problemsets
+  473  mv pythonPS3RKanswers.rtf ../PFB_problemsets
+  474  cd ~
+  475  cd PFB_problemsets
+  476  ./python_strings_practice.py
+  477  chmod +x python_strings_practice.py
+  478  ./python_strings_practice.py
+  479  ./python_strings_practice.py
+  480  ./python_strings_practice.py
+  481  ./python_strings_practice.py
+  482  ./python_strings_practice.py
+  483  ./python_strings_practice.py
+  484  ./python_strings_practice.py
+  485  python3
+  486  ./python_strings_practice.py
+  487  ./python_strings_practice.py
+  488  ./python_strings_practice.py
+  489  ./python_strings_practice.py
+  490  ./python_strings_practice.py
+  491  ./python_strings_practice.py
+  492  ./python_strings_practice.py
+  493  mv python_strings_practice.py python_ATGC_count.py
+  494  git status
+  495  git add python_ATGC_count.py
+  496  git commit -m 'added ATGC counting script'
+  497  git push
+  498  vi convert_T_to_U.py
+  499  git stauts
+  500  git status
+  501  git add convert_T_to_U.py
+  502  git commit -m 'added converting T to U script'
+  503  git push
+  504  ls
+  505  vi python_ATGC_count.py
+  506  python3
+  507  ./AT_GC_content_calculator.py
+  508  chmod +x AT_GC_content_calculator.py
+  509  ./AT_GC_content_calculator.py
+  510  ./AT_GC_content_calculator.py
+  511  ./AT_GC_content_calculator.py
+  512  ./AT_GC_content_calculator.py
+  513  ./AT_GC_content_calculator.py
+  514  ./AT_GC_content_calculator.py
+  515  ./AT_GC_content_calculator.py
+  516  ./AT_GC_content_calculator.py
+  517  ./AT_GC_content_calculator.py
+  518  ./AT_GC_content_calculator.py
+  519  ./AT_GC_content_calculator.py
+  520  ./AT_GC_content_calculator.py
+  521  ./AT_GC_content_calculator.py
+  522  ./AT_GC_content_calculator.py
+  523  vi getting_substring.py
+  524  vi reverse_complement.py
+  525  vi reverse_complement.py
+  526  python3
+  527  ./find_nt_position.py
+  528  chmod +x find_nt_position.py
+  529  ./find_nt_position.py
+  530  ./find_nt_position.py
+  531  ./find_nt_position.py
+  532  ./find_nt_position.py
+  533  ./find_nt_position.py
+  534  ./find_nt_position.py
+  535  ./find_nt_position.py
+  536  :w
+  537  :w
+  538  ./find_nt_position.py
+  539  git status
+  540  git add find_nt_position.py
+  541  git commit -m 'finding nt position of seq script'
+  542  git push
+  543  git status
+  544  git add pythonPS3RKanswers.rtf 
+  545  git status
+  546  git add pythonPS3RKanswers.rtf
+  547  git commit -m 'updated PS3 RK answers'
+  548  git push
+  549  git status
+  550  git rm .find_nt_position.py.swp
+  551  rm .find_nt_position.py.swp
+  552  git status
+  553  git status
+  554  git push
