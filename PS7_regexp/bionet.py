@@ -19,6 +19,9 @@ with open("bionet.txt","r") as bionet_file:
         restrictenz_dict[enzyme_name].append(sequence)
     else:
         restrictenz_dict[enzyme_name] = [sequence]
+
+
+
     
   #  for enzyme_name in re.search(r"(^\S+ \S*)", line):
    #   restrictenz_dict[enzyme_name]=''
