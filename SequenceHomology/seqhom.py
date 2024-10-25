@@ -19,7 +19,7 @@ for hit_file in sys.argv[1:]:
                 continue
             #strip endline and make list of different values and make it into a dictionary by using dict(zip(key,value))
             hit_data = dict(zip(fields,line.strip('\n').split('\t')))
-            #add into file that gave me this data so i know what scoring matrix it came from
+            #add the file name that gave me this data so i know what scoring matrix it came from
             hit_data['file'] = hit_file
             hits_list.append(hit_data)
             break
